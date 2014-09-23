@@ -1,6 +1,14 @@
+html
+{
+	height: 100%;
+}
+
 body
 {
 	width: 100%;
+	min-height: 1vh;
+	height: 100%;
+	background: black;
 }
 
 .clear 
@@ -16,4 +24,19 @@ body
 	margin: auto;
 	display: block;
 	position: relative;
+}
+
+#loadHere
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: block;
+
+}
+
+.flora
+{
+	position: absolute;
+	bottom: 0px;
 }
