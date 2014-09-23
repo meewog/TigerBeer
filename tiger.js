@@ -19,12 +19,12 @@ function drawElements()
 
 	html.push
 	(
-		'<img src="img/branch.png" class="flora" id="branch" />',
-		'<img src="img/leaf01.png" class="flora" id="leaf1" />',
-		'<img src="img/leaf02.png" class="flora" id="leaf2" />',
-		'<img src="img/leaf03.png" class="flora" id="leaf3" />',
-		'<img src="img/leaf04.png" class="flora" id="leaf4" />',
-		'<img src="img/leaf05.png" class="flora" id="leaf5" />',
+		'<img src="img/branch.png" class="flora level1" id="branch" />',
+		'<img src="img/leaf01.png" class="flora level2" id="leaf1" />',
+		'<img src="img/leaf02.png" class="flora level2" id="leaf2" />',
+		'<img src="img/leaf03.png" class="flora level2" id="leaf3" />',
+		'<img src="img/leaf04.png" class="flora level2" id="leaf4" />',
+		'<img src="img/leaf05.png" class="flora level2" id="leaf5" />',
 		'<img src="img/leaves_group01.png" class="flora" id="bush1" />',
 		'<img src="img/leaves_group02.png" class="flora" id="bush2" />',
 		'<img src="img/leaves_group03.png" class="flora" id="bush3" />',
@@ -35,4 +35,117 @@ function drawElements()
 	(
 		html.join(' ')
 	)
+
+	
+
+	$('#branch').animate
+	(
+		{
+			width: '60%'
+		},
+		{
+			duration: 1000,
+			queue: false
+		} 
+	)
+
+	$('#leaf1').animate
+	(
+		{
+			width: '7%'
+		},
+		{
+			duration: 400,
+			queue: false
+		} 
+	)
+
+	$('#leaf2').animate
+	(
+		{
+			width: '40%'
+		},
+		{
+			duration: 800,
+			queue: false
+		} 
+	)
+
+	$('#leaf3').animate
+	(
+		{
+			width: '10%'
+		},
+		{
+			duration: 200,
+			queue: false
+		} 
+	)
+
+	$('#leaf4').animate
+	(
+		{
+			width: '35%'
+		},
+		{
+			duration: 1600,
+			queue: false
+		} 
+	)
+
+	$('#leaf5').animate
+	(
+		{
+			width: '29%'
+		},
+		{
+			duration: 1200,
+			queue: false
+		} 
+	)
+
+	$('#bush1').animate
+	(
+		{
+			width: '29%'
+		},
+		{
+			duration: 400,
+			queue: false
+		} 
+	)
+
+	$('#bush2').animate
+	(
+		{
+			width: '30%'
+		},
+		{
+			duration: 800,
+			queue: false
+		} 
+	)
+
+	$('#bush3').animate
+	(
+		{
+			width: '30%'
+		},
+		{
+			duration: 800,
+			queue: false
+		} 
+	)
+
+	$('#tigerHead').animate
+	(
+		{
+			right: 0
+		},
+		{
+			duration: 3000,
+			// queue: true
+		} 
+	)
+
 }
