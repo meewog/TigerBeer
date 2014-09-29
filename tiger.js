@@ -19,15 +19,16 @@ function drawElements()
 
 	html.push
 	(
-		'<img src="img/branch.png" class="flora level1" id="branch" />',
+		// '<img src="img/branch.png" class="flora level1" id="branch" />',
 		'<img src="img/leaf01.png" class="flora level2" id="leaf1" />',
 		'<img src="img/leaf02.png" class="flora level2" id="leaf2" />',
 		'<img src="img/leaf03.png" class="flora level2" id="leaf3" />',
-		'<img src="img/leaf04.png" class="flora level2" id="leaf4" />',
-		'<img src="img/leaf05.png" class="flora level2" id="leaf5" />',
+		'<img src="img/leaf_tenacious.png" class="flora level2" id="leaf4" />',
+		'<img src="img/leaf_actname2.png" class="flora level2" id="leaf5" />',
 		'<img src="img/leaves_group01.png" class="flora" id="bush1" />',
 		'<img src="img/leaves_group02.png" class="flora" id="bush2" />',
 		'<img src="img/leaves_group03.png" class="flora" id="bush3" />',
+		'<img src="img/logo_small.png" class="fauna" id="logoSmall" />',
 		'<img src="img/tiger.png" class="fauna" id="tigerHead" />'
 	)
 
@@ -38,16 +39,16 @@ function drawElements()
 
 	
 
-	$('#branch').animate
-	(
-		{
-			width: '60%'
-		},
-		{
-			duration: 1000,
-			queue: false
-		} 
-	)
+	// $('#branch').animate
+	// (
+	// 	{
+	// 		width: '60%'
+	// 	},
+	// 	{
+	// 		duration: 1000,
+	// 		queue: false
+	// 	} 
+	// )
 
 	$('#leaf1').animate
 	(
@@ -55,7 +56,7 @@ function drawElements()
 			width: '7%'
 		},
 		{
-			duration: 400,
+			duration: 1400,
 			queue: false
 		} 
 	)
@@ -66,7 +67,7 @@ function drawElements()
 			width: '40%'
 		},
 		{
-			duration: 800,
+			duration: 1800,
 			queue: false
 		} 
 	)
@@ -77,7 +78,7 @@ function drawElements()
 			width: '10%'
 		},
 		{
-			duration: 200,
+			duration: 1200,
 			queue: false
 		} 
 	)
@@ -88,7 +89,7 @@ function drawElements()
 			width: '35%'
 		},
 		{
-			duration: 1600,
+			duration: 2600,
 			queue: false
 		} 
 	)
@@ -99,7 +100,7 @@ function drawElements()
 			width: '29%'
 		},
 		{
-			duration: 1200,
+			duration: 2200,
 			queue: false
 		} 
 	)
@@ -110,7 +111,7 @@ function drawElements()
 			width: '29%'
 		},
 		{
-			duration: 400,
+			duration: 1400,
 			queue: false
 		} 
 	)
@@ -121,7 +122,7 @@ function drawElements()
 			width: '30%'
 		},
 		{
-			duration: 800,
+			duration: 1800,
 			queue: false
 		} 
 	)
@@ -132,7 +133,18 @@ function drawElements()
 			width: '30%'
 		},
 		{
-			duration: 800,
+			duration: 1800,
+			queue: false
+		} 
+	)
+
+	$('#logoSmall').animate
+	(
+		{
+			width: '30%'
+		},
+		{
+			duration: 1800,
 			queue: false
 		} 
 	)
@@ -143,9 +155,17 @@ function drawElements()
 			right: 0
 		},
 		{
-			duration: 3000,
+			duration: 4000,
 			// queue: true
 		} 
+	)
+
+	$('#logoSmall').click
+	(
+		function()
+		{
+			window.location='http://urbanscapes.com.my'
+		}
 	)
 
 }

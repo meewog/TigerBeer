@@ -193,6 +193,14 @@ body
 	right: -30%;
 }
 
+#logoSmall
+{
+	width: 0;
+	bottom: 15%;
+	cursor: pointer;
+	left: 0;
+}
+
 .actor1
 {
 	color: white;
